@@ -1,0 +1,77 @@
+.basket h1 {
+    margin-bottom: 24px;
+    font-size: clamp(36px, 1.812rem + 1.87vw, 52px);
+    text-transform: uppercase;
+}
+
+.basket__list {
+    display: flex;
+    flex-direction: column;
+    row-gap: 24px;
+    margin-bottom: 24px;
+}
+
+.basket__item {
+    display: flex;
+    gap: 16px;
+    align-items: center;
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 24px;
+}
+
+.basket__image {
+    width: 80px;
+    height: 80px;
+    aspect-ratio: 1/1;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.basket__summary {
+    display: flex;
+    flex-direction: column;
+    row-gap: 24px;
+}
+
+.basket__summary p {
+    font-size: clamp(18px, 0.961rem + 0.7vw, 24px);
+    font-weight: 600;
+}
+
+.basket__remove {
+    width: 24px;
+    height: 24px;
+    margin-left: auto;
+    margin-bottom: auto;
+    padding: unset;
+    line-height: 1;
+    font-weight: 600;
+    border: 1px solid #ddd;
+    border-radius: 100%;
+    background-color: transparent;
+}
+
+.quantity-controls {
+    display: flex;
+    column-gap: 8px;
+}
+
+.quantity-button {
+    padding: 12px 24px;
+    border: none;
+    border-radius: 8px;
+    color: #fff;
+    background-color: #000;
+    transition: .2s ease;
+}
+
+.quantity-input {
+    width: 80px;
+    border-radius: 8px;
+}
+
+.quantity-button:hover {
+    color: #000;
+    background-color: transparent;
+    outline: 1px solid #000;
+}

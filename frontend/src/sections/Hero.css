@@ -1,0 +1,47 @@
+.hero__wrapper {
+    display: grid;
+    row-gap: 32px;
+}
+
+.hero__media {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+    height: fit-content;
+}
+
+.hero__media img {
+    aspect-ratio: 1/1;
+    object-fit: cover;
+    border-radius: 16px;
+}
+
+
+.hero__descr h1 {
+    margin-bottom: 24px;
+    font-size: clamp(36px, 1.812rem + 1.87vw, 52px);
+    text-transform: uppercase;
+}
+
+.hero__descr p {
+    margin-bottom: 32px;
+    font-size: clamp(18px, 0.961rem + 0.7vw, 24px);
+    font-weight: 600;
+}
+
+.hero__button {
+    padding: 12px 24px;
+    border-radius: 48px;
+    transition: .2s ease;
+}
+
+@media (min-width: 768px) {
+    .hero__wrapper {
+        grid-template-columns: repeat(2, 1fr);
+        column-gap: 40px;
+    }
+
+    .hero__descr {
+        align-self: center;
+    }
+}

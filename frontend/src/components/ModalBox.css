@@ -1,0 +1,42 @@
+.overlay {
+    position: fixed;
+    inset: 0;
+    background-color: #00000080;
+    z-index: 9;
+}
+
+.modal-box {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    padding: 24px 16px;
+    width: 100%;
+    max-width: 350px;
+    background-color: #fff;
+    border: 2px solid #000;
+    border-radius: 16px;
+    transform: translate(-50%, -50%);
+    z-index: 10;
+}
+
+.modal-box h2 {
+    margin-bottom: 24px;
+    text-transform: uppercase;
+}
+
+.modal-box form {
+    display: flex;
+    flex-direction: column;
+    row-gap: 8px;
+}
+
+.modal-box p {
+    text-align: center;
+}
+
+@media (min-width: 768px) {
+    .modal-box {
+        padding: 32px 24px;
+    }
+}
+

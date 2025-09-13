@@ -1,0 +1,5 @@
+.account h1 {
+    margin-bottom: 24px;
+    font-size: clamp(36px, 1.812rem + 1.87vw, 52px);
+    text-transform: uppercase;
+}

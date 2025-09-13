@@ -1,0 +1,17 @@
+.products__wrapper {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 16px;
+}
+
+@media (min-width: 480px) {
+    .products__wrapper {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (min-width: 768px) {
+    .products__wrapper {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
